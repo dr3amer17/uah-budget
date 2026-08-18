@@ -52,3 +52,7 @@ In progress. Started August 2026.
 **10/08/2026** - Environment set up: Docker, PostgreSQL, Python virtual environment, Git repository.
 
 **11/08/2026** - Defined project scope and wrote README. Confirmed the NBU API response format.
+
+*18/08/2026** - Created a schema and DECISIONS file to keep track of everything.
+
+{"r030":826,"txt":"фунт стерлінгів","rate":60.5167,"cc":"GBP","exchangedate":"11.08.2026"}
