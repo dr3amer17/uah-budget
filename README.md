@@ -53,6 +53,12 @@ In progress. Started August 2026.
 
 **11/08/2026** - Defined project scope and wrote README. Confirmed the NBU API response format.
 
-*18/08/2026** - Created a schema and DECISIONS file to keep track of everything.
+**18/08/2026** - Created a schema and DECISIONS file to keep track of everything.
+
+**19/08/2026** -  Created fx_rates table. Wrote the fetch script: calls the NBU API, parses the response, and inserts a rate into PostgreSQL.
+
+**20/08/2026** - Ingestion pipeline complete. Backfilled 91 days of GBP/UAH rate history with error handling and rate limiting.
+
+
 
 {"r030":826,"txt":"фунт стерлінгів","rate":60.5167,"cc":"GBP","exchangedate":"11.08.2026"}

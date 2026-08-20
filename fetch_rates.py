@@ -17,7 +17,7 @@ def fetch_and_store(target_date):
     response = httpx.get(url, timeout=30.0)
     if response.status_code != 200:
         print(f" Bad status {response.status_code} for {target_date}")
-        retrun  # leaves function early as its not valid
+        return  # leaves function early as its not valid
     all_data = response.json()
     data = all_data[0]
 
@@ -36,8 +36,8 @@ def fetch_and_store(target_date):
 
     time.sleep(1.0)
 
-
-for i in range(90):
+DAYS_TO_BACKFILL = 90
+for i in range(DAYS_TO_BACKFILL):
     day = date.today() - timedelta(days=i)
     try:
         fetch_and_store(day)
