@@ -1,6 +1,3 @@
-#   Project INFO
-
-
 # UAH Budget
 
 A budgeting tool for people living in the UK who spend money from Ukrainian bank accounts.
@@ -9,7 +6,7 @@ A budgeting tool for people living in the UK who spend money from Ukrainian bank
 
 Since the war in Ukraine began, the UK has accepted refugees and made it possible for Ukrainians to live, work and study here. But many of us, myself included, still use Ukrainian banks and cards to pay for groceries and day-to-day things.
 
-That creates a budgeting problem. My money arrives monthly in UAH, and there is a national limit on how much can be spent abroad from a Ukrainian bank - 100,000 UAH per month, about 1,800 GDP. Every price I see is in pounds, but every payment leaves my account is in hryvnia at whatever the exchange rate happens to be that day and time.
+That creates a budgeting problem. My money arrives monthly in UAH, and there is a national limit on how much can be spent abroad from a Ukrainian bank - 100,000 UAH per month, about 1,800 GBP. Every price I see is in pounds, but every payment leaves my account is in hryvnia at whatever the exchange rate happens to be that day and time.
 
 Existing budgeting apps assume you earn and spend in one currency. This one doesn't.
 
@@ -45,6 +42,15 @@ Deliberately out of scope for v1:
 
 Exchange rates come from the National Bank of Ukraine's open API, which is the authoritative source for UAH. ECB-backed APIs don't carry hryvnia.
 
+## Roadmap
+
+1. **Data ingestion** — fetch and store NBU rates
+2. **API** — FastAPI endpoints serving rates and conversions
+3. **Deployment** — live on Railway
+4. **Budget logic** — weekly allowance, monthly limit tracking
+5. **Frontend** — React interface
+6. **Polish** — auth, test coverage
+
 ## Status
 
 In progress. Started August 2026.
@@ -59,6 +65,5 @@ In progress. Started August 2026.
 
 **20/08/2026** - Ingestion pipeline complete. Backfilled 91 days of GBP/UAH rate history with error handling and rate limiting.
 
+**2026-08-21** — Refactored parsing into a separate testable function. Added pytest suite covering date parsing and empty API responses. Data ingestion layer complete. Phase 1 done.
 
-
-{"r030":826,"txt":"фунт стерлінгів","rate":60.5167,"cc":"GBP","exchangedate":"11.08.2026"}
