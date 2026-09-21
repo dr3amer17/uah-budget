@@ -2,6 +2,11 @@
 
 A budgeting tool for people living in the UK who spend money from Ukrainian bank accounts.
 
+**Try it live:**
+- [Interactive API docs](https://web-production-6aed4.up.railway.app/docs)
+- [Latest GBP rate](https://web-production-6aed4.up.railway.app/rates/latest)
+- [Convert 30,000 UAH to GBP](https://web-production-6aed4.up.railway.app/convert?uah=30000)
+
 ## The problem
 
 Since the war in Ukraine began, the UK has accepted refugees and made it possible for Ukrainians to live, work and study here. But many of us, myself included, still use Ukrainian banks and cards to pay for groceries and day-to-day things.
