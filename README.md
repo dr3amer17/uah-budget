@@ -68,3 +68,5 @@ In progress. Started August 2026.
 **23/08/2026** - Refactored parsing into a separate testable function. Added pytest suite covering date parsing and empty API responses. Data ingestion layer complete. Phase 1 done.
 
 **20/09/2026** - Added some of API endpoints.
+
+**21/09/2026** - Deployed to Railway: FastAPI service and PostgreSQL, connected over private networking.
