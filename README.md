@@ -65,5 +65,6 @@ In progress. Started August 2026.
 
 **20/08/2026** - Ingestion pipeline complete. Backfilled 91 days of GBP/UAH rate history with error handling and rate limiting.
 
-**2026-08-21** — Refactored parsing into a separate testable function. Added pytest suite covering date parsing and empty API responses. Data ingestion layer complete. Phase 1 done.
+**23/08/2026** - Refactored parsing into a separate testable function. Added pytest suite covering date parsing and empty API responses. Data ingestion layer complete. Phase 1 done.
 
+**20/09/2026** - Added some of API endpoints.
